@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8456"
-	"mapversion" "18"
+	"mapversion" "20"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "18"
+	"mapversion" "20"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1362,7 +1362,6 @@ entity
 	{
 		"OnPressed" "secret_test_doorUnlock0-1"
 		"OnPressed" "secret_test_doorOpen0.3-1"
-		"OnPressed" "secret_test_doorClose3.3-1"
 	}
 	solid
 	{
@@ -1471,7 +1470,7 @@ entity
 	"disablereceiveshadows" "0"
 	"disableshadowdepth" "0"
 	"disableshadows" "0"
-	"dmg" "0"
+	"dmg" "1000"
 	"drawinfastreflection" "0"
 	"fademaxdist" "0"
 	"fademindist" "-1"
@@ -1479,7 +1478,7 @@ entity
 	"forceclosed" "1"
 	"health" "0"
 	"ignoredebris" "0"
-	"lip" "1000"
+	"lip" "1"
 	"locked_sentence" "0"
 	"loopmovesound" "0"
 	"movedir" "-90 0 0"
@@ -1495,7 +1494,7 @@ entity
 	"targetname" "secret_test_door"
 	"ttt_traitor_only" "1"
 	"unlocked_sentence" "0"
-	"wait" "4"
+	"wait" "3"
 	solid
 	{
 		"id" "131"
@@ -1609,9 +1608,9 @@ entity
 	"wait" "3"
 	connections
 	{
-		"OnPressed" "traitor_doorUnlock0-1"
-		"OnPressed" "traitor_doorOpen0.3-1"
-		"OnPressed" "traitor_doorClose3.3-1"
+		"OnPressed" "secret_test_doorUnlock0-1"
+		"OnPressed" "secret_test_doorOpen0.3-1"
+		"OnPressed" "secret_test_doorClose3.3-1"
 	}
 	solid
 	{
